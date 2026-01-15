@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络测试工具 - 支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #007AFF;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        
+        h2 {
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .contact-info p {
+            margin: 10px 0;
+        }
+        
+        .contact-info strong {
+            color: #007AFF;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .feature-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #007AFF;
+        }
+        
+        .feature-item strong {
+            color: #007AFF;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌐 网络测试工具</h1>
+        <p style="color: #666; margin-bottom: 30px;">专业的网络诊断和测试工具</p>
+        
+        <h2>📧 联系我们</h2>
+        <div class="contact-info">
+            <p><strong>支持邮箱：</strong>support@example.com</p>
+            <p><strong>反馈建议：</strong>feedback@example.com</p>
+            <p><strong>技术支持：</strong>tech@example.com</p>
+        </div>
+        <p>我们会在 24-48 小时内回复您的邮件。如果您遇到紧急问题，请通过邮件联系我们，我们会优先处理。</p>
+        
+        <h2>❓ 常见问题</h2>
+        
+        <h3>如何使用应用？</h3>
+        <p>网络测试工具提供了多种网络测试功能：</p>
+        <div class="feature-list">
+            <div class="feature-item">
+                <strong>TCP 测试</strong>
+                测试指定主机和端口的 TCP 连接状态，检查端口是否开放。
+            </div>
+            <div class="feature-item">
+                <strong>UDP 测试</strong>
+                发送 UDP 数据包到指定主机和端口，并接收响应数据。
+            </div>
+            <div class="feature-item">
+                <strong>Ping 测试</strong>
+                测试网络延迟和连通性，显示往返时间(RTT)和丢包率统计。
+            </div>
+            <div class="feature-item">
+                <strong>Traceroute 追踪</strong>
+                追踪数据包从源主机到目标主机所经过的路由路径。
+            </div>
+        </div>
+        
+        <h3>测试失败怎么办？</h3>
+        <ul>
+            <li>检查网络连接是否正常</li>
+            <li>确认目标主机地址和端口号是否正确</li>
+            <li>检查防火墙设置是否阻止了连接</li>
+            <li>某些网络环境可能限制某些类型的测试</li>
+        </ul>
+        
+        <h3>应用支持哪些设备？</h3>
+        <p>网络测试工具支持所有运行 iOS 13.0 或更高版本的 iPhone 和 iPad 设备。</p>
+        
+        <h3>隐私和安全</h3>
+        <p>我们非常重视您的隐私。应用不会收集、存储或传输任何个人信息。所有网络测试都在本地设备上完成，测试结果仅保存在您的设备上。</p>
+        
+        <h2>💡 使用建议</h2>
+        <ul>
+            <li>在进行网络测试前，确保设备已连接到网络</li>
+            <li>对于 Ping 测试，建议使用知名的主机地址（如 8.8.8.8）进行测试</li>
+            <li>TCP/UDP 测试需要目标主机有相应的服务在运行</li>
+            <li>Traceroute 测试可能需要较长时间，请耐心等待</li>
+        </ul>
+        
+        <h2>🔄 更新日志</h2>
+        <p><strong>版本 1.0</strong> (2026-01-15)</p>
+        <ul>
+            <li>初始版本发布</li>
+            <li>支持 TCP、UDP、Ping 和 Traceroute 测试</li>
+            <li>支持 iPhone 和 iPad</li>
+        </ul>
+        
+        <div class="footer">
+            <p>© 2026 网络测试工具. 保留所有权利.</p>
+            <p>感谢您使用我们的应用！</p>
+        </div>
+    </div>
+</body>
+</html>
