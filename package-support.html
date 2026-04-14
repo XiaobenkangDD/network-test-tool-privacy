@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>快递大师-取件码管家｜技术支持</title>
+    <meta name="description" content="快递大师-取件码管家的技术支持与常见问题。" />
+    <style>
+      :root {
+        --bg: #0b1220;
+        --card: rgba(255, 255, 255, 0.08);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.70);
+        --border: rgba(255, 255, 255, 0.14);
+        --accent: #1677ff;
+        --ok: #52c41a;
+        --warn: #fa8c16;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB",
+          "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif;
+        background: radial-gradient(1200px 600px at 20% -10%, rgba(22,119,255,0.35), transparent 60%),
+          radial-gradient(1000px 600px at 80% 10%, rgba(82,196,26,0.20), transparent 55%),
+          var(--bg);
+        color: var(--text);
+      }
+      a { color: inherit; }
+      .wrap { max-width: 920px; margin: 0 auto; padding: 28px 18px 56px; }
+      .top {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        padding: 18px;
+        border: 1px solid var(--border);
+        background: linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.05));
+        border-radius: 18px;
+        backdrop-filter: blur(10px);
+      }
+      .logo {
+        width: 52px; height: 52px; border-radius: 16px;
+        display: grid; place-items: center;
+        background: rgba(22,119,255,0.18);
+        border: 1px solid rgba(22,119,255,0.32);
+        flex: none;
+      }
+      .logo span { font-weight: 800; color: rgba(255,255,255,0.95); letter-spacing: 1px; }
+      h1 { font-size: 20px; margin: 0 0 4px; }
+      .sub { color: var(--muted); font-size: 13px; margin: 0; line-height: 1.5; }
+      .grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 14px; }
+      @media (min-width: 860px) { .grid { grid-template-columns: 1.1fr 0.9fr; } }
+      .card {
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 18px;
+        padding: 18px;
+      }
+      h2 { font-size: 16px; margin: 0 0 10px; }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255,255,255,0.06);
+        color: var(--muted);
+        font-size: 12px;
+      }
+      ul { margin: 10px 0 0; padding-left: 18px; color: var(--muted); line-height: 1.7; }
+      li { margin: 6px 0; }
+      .k {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 8px;
+        border: 1px solid rgba(255,255,255,0.16);
+        background: rgba(255,255,255,0.06);
+        color: rgba(255,255,255,0.82);
+        font-size: 12px;
+      }
+      .btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 42px;
+        padding: 0 14px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: rgba(255,255,255,0.06);
+        text-decoration: none;
+        color: rgba(255,255,255,0.92);
+        font-weight: 600;
+        font-size: 13px;
+      }
+      .btn.primary { background: rgba(22,119,255,0.22); border-color: rgba(22,119,255,0.36); }
+      .footer { margin-top: 18px; color: rgba(255,255,255,0.55); font-size: 12px; line-height: 1.6; }
+      .hr { height: 1px; background: rgba(255,255,255,0.10); margin: 12px 0; }
+      .tag { font-weight: 700; color: rgba(255,255,255,0.88); }
+      .note { margin-top: 10px; font-size: 12px; color: rgba(255,255,255,0.62); }
+      .note b { color: rgba(255,255,255,0.86); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <div class="logo" aria-hidden="true"><span>快</span></div>
+        <div>
+          <h1>快递大师-取件码管家｜技术支持</h1>
+          <p class="sub">短信解析 / 图片识别 / 列表管理 / 取件提醒 / 本地备份导出</p>
+        </div>
+      </header>
+
+      <div class="grid">
+        <section class="card">
+          <div class="pill">常见问题</div>
+          <h2>我该怎么新增快递？</h2>
+          <ul>
+            <li>在首页点 <span class="k">+</span>，手动填写后保存。</li>
+            <li>也可以粘贴快递短信，点 <span class="k">智能解析并添加</span> 自动提取信息。</li>
+            <li>在「发现更多 → 图片识别」从相册选面单/截图，识别后进入解析页确认入库。</li>
+          </ul>
+
+          <div class="hr"></div>
+
+          <h2>图片识别失败/识别结果不准确？</h2>
+          <ul>
+            <li>尽量选择清晰截图/面单照片，避免强反光与过暗。</li>
+            <li>识别后可在解析页手动修改快递公司、运单号、取件码与地址。</li>
+          </ul>
+
+          <div class="hr"></div>
+
+          <h2>取件提醒没有通知？</h2>
+          <ul>
+            <li>请在系统 <span class="k">设置 → 通知</span> 中允许本应用通知。</li>
+            <li>若开启了专注模式/低电量模式，也可能影响通知到达。</li>
+          </ul>
+
+          <div class="hr"></div>
+
+          <h2>订阅与恢复购买</h2>
+          <ul>
+            <li>订阅用于解锁持续使用（含恢复购买入口）。</li>
+            <li>如更换设备，请使用付费墙或系统账户页面的 <span class="k">恢复购买</span>。</li>
+          </ul>
+        </section>
+
+        <aside class="card">
+          <div class="pill">联系与反馈</div>
+          <h2>联系开发者</h2>
+          <ul>
+            <li><span class="tag">邮箱</span>：<a href="mailto:1159788905@qq.com">1159788905@qq.com</a></li>
+            <li><span class="tag">反馈内容建议</span>：机型、系统版本、问题截图、复现步骤</li>
+          </ul>
+
+          <div class="btns">
+            <a class="btn primary" href="mailto:1159788905@qq.com?subject=%E5%BF%AB%E9%80%92%E5%A4%A7%E5%B8%88-%E5%8F%96%E4%BB%B6%E7%A0%81%E7%AE%A1%E5%AE%B6%20%E5%8F%8D%E9%A6%88&body=%E8%AF%B7%E6%8F%90%E4%BE%9B%EF%BC%9A%0A-%20%E6%9C%BA%E5%9E%8B%EF%BC%9A%0A-%20iOS%20%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%EF%BC%9A%0A-%20%E5%A4%8D%E7%8E%B0%E6%AD%A5%E9%AA%A4%EF%BC%9A%0A-%20%E6%88%AA%E5%9B%BE%EF%BC%88%E5%A6%82%E6%9C%89%EF%BC%89%EF%BC%9A">发邮件反馈</a>
+          </div>
+
+          <p class="note">
+            <b>隐私承诺：</b>不需要登录、无广告、不开启云同步；快递数据默认仅保存在本机。
+          </p>
+
+          <div class="footer">
+            <div class="hr"></div>
+            <div>最后更新：2026-04-14</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
+
