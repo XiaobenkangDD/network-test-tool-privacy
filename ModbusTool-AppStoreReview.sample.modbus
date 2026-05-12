@@ -1,0 +1,45 @@
+{
+  "addressBase" : 0,
+  "addressInCell" : false,
+  "connection" : {
+    "connectTimeoutSeconds" : 3,
+    "defaultUnitId" : 1,
+    "host" : "127.0.0.1",
+    "kind" : "tcp",
+    "port" : 5020,
+    "requestTimeoutSeconds" : 2,
+    "serialBaud" : 9600,
+    "serialDataBits" : 8,
+    "serialParity" : "none",
+    "serialPath" : "",
+    "serialStopBits" : 1
+  },
+  "gridRows" : 10,
+  "hideAliasColumns" : false,
+  "pingFunctionCode" : 3,
+  "pingQuantity" : 1,
+  "pingStartAddress" : 0,
+  "pingUsesFirstReadRow" : true,
+  "plcAddressStyle" : false,
+  "pollIntervalMs" : 500,
+  "readOnceAfterConnect" : false,
+  "rows" : [
+    {
+      "aliases" : [ ],
+      "disableOnError" : false,
+      "displayFormat" : "uint16",
+      "functionCode" : 3,
+      "id" : "F1E2D3C4-B5A6-7890-ABCD-EF1234567890",
+      "name" : "Holding 0 (review)",
+      "offset" : null,
+      "pollEnabled" : true,
+      "quantity" : 1,
+      "scale" : null,
+      "scanRateMs" : null,
+      "startAddress" : 0,
+      "unitId" : null,
+      "wordEndian" : "abcd"
+    }
+  ],
+  "schemaVersion" : 6
+}
